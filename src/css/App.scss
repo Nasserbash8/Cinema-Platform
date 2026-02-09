@@ -1,0 +1,74 @@
+$maincolor:#060d17;
+$thirdcolor:#f1c40f;
+$fourthcolor:#f1c40f;
+$textcolor:white;
+$secondtextcolor:grey;
+%gradiantColor{
+  background: #060d17
+
+
+}
+%HovertColor{
+  background: $fourthcolor !important;
+}
+%border{
+ border-bottom: 2px solid $fourthcolor;
+
+}
+%borderReverse{
+  border: 2px solid $thirdcolor;
+ border-radius: 25px;
+}
+button{
+  background: $fourthcolor !important;
+  border: none ;
+  &:hover{
+    @extend %HovertColor;
+  }
+}
+// import layout css files 
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/loader";
+// import pages css files 
+@import "./pages/movie-detailes";
+@import "./pages/home";
+// import widgets css files 
+@import "./widgets/menu";
+@import "./widgets/hero-section";
+@import "./widgets/hero-section2";
+@import "./widgets/FeauterdMovies";
+
+@import "./widgets/moviesSliderTwo";
+@import "./widgets/pagintaion";
+@import "./widgets/moviesCard";
+@import "./widgets/moviesCard2";
+@import "./widgets/mobile-filter";
+body{
+  @extend %gradiantColor;
+
+  margin: 0;
+  padding: 0;
+ 
+ 
+}
+.MuiMenu-list{
+  @extend %gradiantColor;
+}
+ .MuiSelect-select{
+  color: $textcolor !important;
+ }
+
+.rate-icon{
+  color: yellow !important;
+}
+a{
+  color: $textcolor !important;
+  transition: all 0.3s ease-in;
+  &:hover{
+    color: $secondtextcolor !important;
+  }
+}
+.swiper-button-next,.swiper-button-prev{
+  color: $fourthcolor !important;
+}

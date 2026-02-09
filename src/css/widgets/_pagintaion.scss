@@ -1,0 +1,28 @@
+.pagination{
+    .page{
+           .page-link{
+            color: $maincolor !important;
+            border-radius: 50px;
+            border: none;
+            background-color: $fourthcolor;
+            
+            transition: all .3 ease;
+            font-size: 12px;
+            &:hover{
+                background-color: transparent;
+                color: white !important;
+                border: 1px solid $fourthcolor;
+            }
+            &.active{
+                background-color: transparent;
+                color: white !important;
+                border: 1px solid $fourthcolor;
+                outline: none !important;
+                box-shadow: none !important;
+            }
+           }
+          &.disabled{
+            cursor:no-drop;
+          }
+    }
+}

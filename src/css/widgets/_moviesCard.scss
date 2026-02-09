@@ -1,0 +1,26 @@
+.card-movie{
+    width: 100%;
+    position: relative;
+    height: 300px;
+    border-radius: 10px;
+    
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform .2s;
+    }
+    overflow: hidden;
+  
+    &:hover img{
+        transform: scale(1.3);
+    }
+
+}
+@media only screen and (max-width: 400px) {
+    .card-movie{
+        height : 450px
+   }}
+
+
+  
